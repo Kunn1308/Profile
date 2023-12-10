@@ -1,0 +1,87 @@
+:root{
+    --primary-color:#0779e4;
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --border-color: #dbdbdb;
+
+    --navbar-height: 34px;
+    --header-height: 71px;
+    --header-width-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+*{
+    /*inherit là để kế thừa thuộc tính của thẻ cha nó*/
+    box-sizing: inherit;
+}
+
+html{
+    /*mặc định cỡ chữ 100% là 16px, ta để là 62.5% được hiểu là 10px, ta có được 1rem bằng 10px, 1.2rem là 12px*/
+    font-size: 62.5%;
+    line-height: 1.8;
+    font-family: 'Roboto', Arial ,sans-serif;
+    /*để border-box trong thẻ html là thẻ to nhất, nên inherit trên *{} được kế thừa lại*/
+    box-sizing: border-box;
+}
+
+/* Resposive */
+.grid{
+    /*nếu dùng màn hình lớn hơn 1200px thì width của nó bắt buộc là 1200px thôi, còn dùng màn hình nhỏ hơn thì max-width: 100% sẽ giảm width xuống*/
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.gird__full-width {
+    /*trong trường hợp không dùng width: 1200px ở trên thì dùng này để hiển thị tùy theo màn hình*/
+    width: 100%;
+}
+
+.grid__row {
+    /*những thẻ nằm trong class này thì sẽ nằm cùng trên hàng ngang và những thành phần con có kính thước lớn hơn thì sẽ tự động đưa xuống dòng*/ 
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+
+/* button style */
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 24px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn--with-icon {
+    background-color: transparent;
+    color: var(--white-color);
+}
