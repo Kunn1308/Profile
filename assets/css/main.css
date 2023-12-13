@@ -181,12 +181,155 @@
     margin-right: 36px;
 }
 
-
-
-.container{
+.container-section{
     padding: 8em 0;
     position: relative;
     width: 100%;
     overflow-x: hidden;
 }
 
+#about{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__image{
+    width: 50%;
+    height: 600px;
+    background: url('../img/self.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.about__imfor{
+    padding: 0 24px;
+    margin-top: 48px;
+    width: 50%;
+}
+
+.about__imfor-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.about__imfor-item{
+    background-color: var(--white-color);
+    margin-right: 10px;
+    padding: 8px 16px;
+    font-size: 1.3rem;
+    color: #777777;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style: none;
+    cursor: pointer;
+}
+
+.about__imfor-content{
+   
+}
+
+.imformation{
+
+}
+
+.imformation__aboutme{
+
+}
+
+.imformation__aboutme-head,
+.imformation__skill-head{
+    margin: 0 0 24px 0;
+}
+
+.imformation__aboutme-content,
+.imformation__skill-content,
+.imformation__exp-content{
+    margin: 0 0 16px 0;
+}
+
+.sector{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sector__progress{
+    width: 100%;
+}
+
+.sector__progress-item{
+    margin: 0 0 30px 0;
+    width: 50%;
+}
+
+.sector__progress-item h3{
+    line-height: 1.5;
+    font-size: 1.4rem;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.progress{
+    background: rgba(0, 0, 0, 0.05);
+    overflow: visible;
+}
+
+.progress__bar{
+    display: flex;
+    overflow: visible;
+    height: 8px;
+    width: 0;
+    background-color: var(--primary-color);
+    position: relative;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress__bar span {
+    position: absolute;
+    top: -36px;
+    right: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.imformation__exp-item{
+
+}
+
+.imformation__exp-head{
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.imformation__exp-date{
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.about__imfor-item.active{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 4px;
+    position: relative;
+}
+
+.about__imfor-item.active::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 45%;
+    border-style: solid;
+    border-width: 5px 5px 1px 5px;
+    border-color: var(--primary-color) transparent transparent transparent;
+}
+
+.imformation-tiem{
+    display: none;
+}
+
+.imformation-tiem.active{
+    display: block;
+}

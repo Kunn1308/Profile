@@ -2,7 +2,7 @@
     .grid{
         width: 720px;
     }
-
+    
     .header{
         height: 24px;
         padding: 8px 0;
@@ -20,13 +20,21 @@
     .header__navbar-list{
         display: none;
     }
+
+    .sector__progress-item{
+        width: 100%;
+    }
+    
+    .container--full{
+        width: 100%;
+    }
 }
 
 @media (min-width:61.875em) and (max-width:1200px){
     .grid{
         width: 960px;
     }
-
+    
     .header{
         height: 24px;
         padding: 8px 0;

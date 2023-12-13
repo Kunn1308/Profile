@@ -15,6 +15,9 @@
     box-sizing: inherit;
 }
 
+body {
+    background-color: #f8f8f8;
+}
 html{
     /*mặc định cỡ chữ 100% là 16px, ta để là 62.5% được hiểu là 10px, ta có được 1rem bằng 10px, 1.2rem là 12px*/
     font-size: 62.5%;
@@ -42,11 +45,11 @@ html{
     /*những thẻ nằm trong class này thì sẽ nằm cùng trên hàng ngang và những thành phần con có kính thước lớn hơn thì sẽ tự động đưa xuống dòng*/ 
     display: flex;
     flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right: -5px;
 }
 
-
+.grid__column {
+    width: 50%;
+}
 /* button style */
 .btn {
     min-width: 124px;
@@ -84,4 +87,25 @@ html{
 .btn--with-icon {
     background-color: transparent;
     color: var(--white-color);
+}
+
+.textbold{
+    font-size: 4rem;
+}
+
+.textbold--size-m{
+    font-size: 2rem;
+}
+
+.textbold--size-l{
+    font-size: 2.4rem;
+}
+
+.textbold--size-xl{
+    font-size: 3rem;
+}
+
+.textnormal {
+    font-size: 1.6rem;
+    color: #999999;
 }

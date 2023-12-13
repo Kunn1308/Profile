@@ -4,6 +4,9 @@ const $$ = document.querySelectorAll.bind(document)
 const heading = $('.header')
 const textauto = $('.auto')
 const btnemail = $('.btn--email')
+const progressbars = $$('.progress__bar')
+const aboutimfors = $$('.about__imfor-item')
+const imformations = $$('.imformation-tiem')
 const app ={
     currentIndex: 0,
     describes:['I Enjoy Web Design', 
@@ -12,11 +15,8 @@ const app ={
 
     render: function(){
         const describe = this.describes[this.currentIndex];
-        textauto.innerHTML = `<span class="typewrite">${describe}</span>`;
         textauto.innerHTML = ''; // Clear existing content
-
         let charIndex = 0;
-
         function typeWriter() {
             if (charIndex < describe.length) {
                 // console.log(describe.length,charIndex);
@@ -55,6 +55,14 @@ const app ={
         typeWriter(); // Start typing the current sentence
     },
 
+    progressbar: function(){
+        Array.from(progressbars).map((result,index)=>{
+            const progressnow = result.getAttribute('aria-valuenow');
+            result.style.width = progressnow + '%';
+        })
+         
+    },
+
     handleEvents: function(){
         document.onscroll = function(){
             // console.log(window.scrollY);
@@ -68,15 +76,24 @@ const app ={
             // console.log(scrollTop)
         }
 
-        btnemail.onclick = function(){
-           
-        }
+        aboutimfors.forEach((result,index)=>{
+            const imformation = imformations[index]
+            
+            result.onclick = function(){
+                console.log(imformation)
+                $('.about__imfor-item.active').classList.remove('active');
+                $('.imformation-tiem.active').classList.remove('active');
+               this.classList.add('active');
+               imformation.classList.add('active');
+            }
+        })
     },
 
     start: function(){
         
         this.handleEvents();
         this.render();
+        this.progressbar();
         
     }
 }
