@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -19,39 +19,38 @@
             <div class="grid">
                 <nav class="header__navbar">
                     <a class="header__navbar-item-link header__navbar-item-link--name" href="">VM.NGỌC</a>
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <a class="header__navbar-item-link" href="">Home</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a class="header__navbar-item-link" href="">About</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a class="header__navbar-item-link" href="">Services</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a class="header__navbar-item-link" href="">Portfolio</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a class="header__navbar-item-link" href="">Pricing</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a class="header__navbar-item-link" href="">Blog</a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a class="header__navbar-item-link" href="">Contact</a>
-                        </li>
-                    </ul>
-
+                    
                     <div class="mobile-menu-btn">
                         <i class="menu-icon ti-menu js-menu-btn"></i>
                         MENU
                     </div>
+
+                    
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item ">
+                                <a class="header__navbar-item-link activeme" href="#home">Home</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a class="header__navbar-item-link" href="#about">About</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a class="header__navbar-item-link" href="#services">Services</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a class="header__navbar-item-link" href="#blog">Blog</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a class="header__navbar-item-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    
+
+                    
                 </nav>
             </div>
         </header>
 
-        <div class="slider">
+        <div id = "home" class="slider">
             <div class="slider__container-text grid">
                 <div class="content">
                     <span class="content__subheading">
@@ -101,9 +100,9 @@
         </div>
 
         <div class="container">
-            <div class="grid container--full">
-                <div class="grid__row">
-                    <div id="about" class="container-section">
+            <div id="about" class="container-section">
+                <div class="grid">
+                    <div class="grid__row">
                         <div class="about__image"></div>
                         <div class="about__imfor">
                             <ul class="about__imfor-list">
@@ -185,20 +184,359 @@
                                         </div>
                                     </div>
                                 </div>
+                        
                             </div>
                         </div>
                     </div>
-                    <div id="services" class="container-section"></div>
-                    <div id="portfolio" class="container-section"></div>
-                    <div id="pricing" class="container-section"></div>
-                    <div id="blog" class="container-section"></div>
-                    <div id="contact" class="container-section"></div>
+                </div>
+            </div>
+            <div id="services" class="container-section">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="services__heading">
+                            <span class="section__sub-heading">Services</span>
+                            <h2 class="Section__heading">This is My Expertise, The Services I'll Provide My Clients</h2>
+                        </div>
+
+                        <div class="services__content">
+                            <div class="services__content-item">
+                                <img src="" alt="chèn icon">
+                                <div class="services__content-text">
+                                    <h2 class="services__content-head textbold--size-m">UI & UX Design</h2>
+                                    <p class="textnormal">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <a href="" class="services__content-link">
+                                        <span class="services__content-title textnormal">Read more</span>
+                                        <i class="services__content-icon fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="services__content-item">
+                                <img src="" alt="chèn icon">
+                                <div class="services__content-text">
+                                    <h2 class="services__content-head textbold--size-m">Web Development</h2>
+                                    <p class="textnormal">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <a href="" class="services__content-link">
+                                        <span class="services__content-title textnormal">Read more</span>
+                                        <i class="services__content-icon fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="services__content-item">
+                                <img src="" alt="chèn icon">
+                                <div class="services__content-text">
+                                    <h2 class="services__content-head textbold--size-m">Graphic Design</h2>
+                                    <p class="textnormal">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <a href="" class="services__content-link">
+                                        <span class="services__content-title textnormal">Read more</span>
+                                        <i class="services__content-icon fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="services__footer">
+                            <div class="services__footer-content">
+                                <p class="services__footer-content-text">
+                                    <span class="textnormal">
+                                        Have any works you want to done by me?
+                                        <a href="" class="services__footer-content-link">Contact me</a>
+                                    </span>
+                                </p>
+
+                                <p class="textnormal">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div id="counter" class="container-section">
+                <div class="counter__background"></div>
+                <div class="counter__container">
+                    <div class="grid">
+                        <div class="grid__row ">
+                            <div class="counter__container-item">
+                                <img src="./assets/img/png/001-customer-review.png" alt="" class="connter__container-image">
+                                <div class="counter__container-text">
+                                    <h2 class="counter__container-text-number textbold">3,000</h2>
+                                    <span class="counter__container-text-caption textnormal">Happy Customer</span>
+                                </div>
+                            </div>
+
+                            <div class="counter__container-item">
+                                <img src="./assets/img/png/003-folder.png" alt="" class="connter__container-image">
+                                <div class="counter__container-text">
+                                    <h2 class="counter__container-text-number textbold">320</h2>
+                                    <span class="counter__container-text-caption textnormal">Project Completed</span>
+                                </div>
+                            </div>
+
+                            <div class="counter__container-item">
+                                <img src="./assets/img/png/002-coffee-cup.png" alt="" class="connter__container-image">
+                                <div class="counter__container-text">
+                                    <h2 class="counter__container-text-number textbold">1,000</h2>
+                                    <span class="counter__container-text-caption textnormal">Cups of Coffee</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="blog" class="container-section">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="blog__heading">
+                            <span class="section__sub-heading">OUR BLOG</span>
+                            <h2 class="Section__heading">Recent From Blog</h2>
+                        </div>
+
+                        <div class="blog__content">
+                            <div class="blog__content-item">
+                                <a href="" class="blog__content-image"></a>
+                                <div class="blog__content-text">
+                                    <p class="textnormal--size-m">
+                                        <span class="calendar">
+                                            <i class="bi bi-calendar blog__content-icon"></i>
+                                            Jan. 18, 2021
+                                        </span>
+
+                                        <span class="comments">
+                                            <a href="" class="comments-link">
+                                                <i class="fa-solid fa-comment blog__content-icon"></i>
+                                                3 Comments
+                                            </a>
+                                        </span>
+                                    </p>
+                                    <h3 class="textbold--size-m blog__content-text-head">
+                                        <a href="">Tips About Creating A New Web Design</a>
+                                    </h3>
+                                    <p class="textnormal">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="blog__content-item">
+                                <a href="" class="blog__content-image"></a>
+                                <div class="blog__content-text">
+                                    <p class="textnormal--size-m">
+                                        <span class="calendar">
+                                            <i class="bi bi-calendar blog__content-icon"></i>
+                                            Jan. 18, 2021
+                                        </span>
+
+                                        <span class="comments">
+                                            <a href="" class="comments-link">
+                                                <i class="fa-solid fa-comment blog__content-icon"></i>
+                                                3 Comments
+                                            </a>
+                                        </span>
+                                    </p>
+                                    <h3 class="textbold--size-m blog__content-text-head">
+                                        <a href="">Tips About Creating A New Web Design</a>
+                                    </h3>
+                                    <p class="textnormal">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                </div>
+                            </div>
+
+                            <div class="blog__content-item">
+                                <a href="" class="blog__content-image"></a>
+                                <div class="blog__content-text">
+                                    <p class="textnormal--size-m">
+                                        <span class="calendar">
+                                            <i class="bi bi-calendar blog__content-icon"></i>
+                                            Jan. 18, 2021
+                                        </span>
+
+                                        <span class="comments">
+                                            <a href="" class="comments-link">
+                                                <i class="fa-solid fa-comment blog__content-icon"></i>
+                                                3 Comments
+                                            </a>
+                                        </span>
+                                    </p>
+                                    <h3 class="textbold--size-m blog__content-text-head">
+                                        <a href="">Tips About Creating A New Web Design</a>
+                                    </h3>
+                                    <p class="textnormal">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                </div>
+                            </div>
+
+                            <div class="blog__content-item">
+                                <a href="" class="blog__content-image"></a>
+                                <div class="blog__content-text">
+                                    <p class="textnormal--size-m">
+                                        <span class="calendar">
+                                            <i class="bi bi-calendar blog__content-icon"></i>
+                                            Jan. 18, 2021
+                                        </span>
+
+                                        <span class="comments">
+                                            <a href="" class="comments-link">
+                                                <i class="fa-solid fa-comment blog__content-icon"></i>
+                                                3 Comments
+                                            </a>
+                                        </span>
+                                    </p>
+                                    <h3 class="textbold--size-m blog__content-text-head">
+                                        <a href="">Tips About Creating A New Web Design</a>
+                                    </h3>
+                                    <p class="textnormal">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="container-section">
+                <div class="grid__row">
+                    
+                    <div class="contact">
+                        <h3 class="textbold--size-xl contact__head">Contact us</h3>
+                        <p class="textnormal contact__sub">We're open for any suggestion or just to have a chat</p>
+                        <div class="contact__imform">
+                            <div class="contact__imform-text">
+                                <span class="textnormal--size-m">My Address:</span>
+                                <p class="textnormal">Hẻm 19/28 Vườn Lài An Phú Đông, Quận 12, Thành phố Hồ Chí Minh</p>
+                            </div>
+
+                            <div class="contact__imform-text">
+                                <span class="textnormal--size-m">My Email:</span>
+                                <a href="mailto:ngockunn13801@gmail.com" class="textnormal contact__imform-link">ngockunn13801@gmail.com</a>
+                            </div>
+
+                            <div class="contact__imform-text">
+                                <span class="textnormal--size-m">My Phone:</span>
+                                <a href="tel://0355818085" class="textnormal contact__imform-link">0355818085</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__form">
+                            <div class="grid__row">
+                                <div class="contact__form-item">
+                                    <div class="contact__form--name">
+                                        <input type="text" class="contact__form-input" name="name" id="name" placeholder="Name">
+                                    </div>
+                                    <div class="contact__form--email">
+                                        <input type="email" class="contact__form-input" name="email" id="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="contact__form--subject">
+                                    <input type="text" class="contact__form-input" name="subject" id="subject" placeholder="Subject">
+                                </div>
+                                <div class="contact__form-message"> 
+                                    <textarea name="message" class="contact__form-input" id="message" cols="30" rows="4" placeholder="Create a message here"></textarea>
+                                </div>
+                                <button class="btn btn--primary btn--send">Send message</button>
+                            </div>
+                        </div>
+
+                        <div class="contact__follow">
+                            <h3 class="textbold--size-m">Follow me:
+                                <a href="https://www.facebook.com/minhngoc.kunn" target="_blank" class="contact__follow-link">
+                                    <i class="contact__follow--fb fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCNeVKUd_qhtUI_L18i6zOQw" target="_blank" class="contact__follow-link">
+                                    <i class="contact__follow--yt fa-brands fa-youtube"></i>
+                                </a>
+                                <a href="https://www.instagram.com/_ngoc1308/" target="_blank" class="contact__follow-link">
+                                    <img src="./assets/img/ig.jpg" alt="" class="contact__follow-icon">
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2329.875523716518!2d106.69137010440926!3d10.859593373330728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528396eb2895f%3A0x23e54f4792c2eca5!2zSOG6u20gMTkvMjggVsaw4budbiBMw6BpLCBBbiBQaMO6IMSQw7RuZywgUXXhuq1uIDEyLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1703046547071!5m2!1svi!2s" width="759.6" height="684.2" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
                 </div>
             </div>
         </div>
+        <div class="intro">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="intro__align">
+                        <div class="intro__text">
+                            <h2 class="textbold--size-l">Have any works you want to done by me?</h2>
+                            <p class="textnormal">Far far away, behind the word mountains</p>
+                        </div>
 
+                        <div class="intro__btn">
+                            <a href="" class="btn btn--contact">Contact me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="alignment">
+                        <div class="footer__imfor">
+                            <h2>
+                                <a href="" class="footer__imfor-name">VM.NGỌC</a>
+                            </h2>
+                            <p class="textnormal">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
 
+                        <div class="footer__services">
+                            <h2 class="footer__services-head">Services</h2>
+                            <ul class="footer__Services-list">
+                                <li class="footer__services-item">
+                                    <a href="" class="footer__services-link">
+                                        <i class="footer__services-icon bi bi-arrow-right"></i>
+                                        Web Design
+                                    </a>
+                                </li>
+                                
+                                <li class="footer__services-item">
+                                    <a href="" class="footer__services-link">
+                                        <i class="footer__services-icon bi bi-arrow-right"></i>
+                                        Web Development
+                                    </a>
+                                </li>
+                                
+                                <li class="footer__services-item">
+                                    <a href="" class="footer__services-link">
+                                        <i class="footer__services-icon bi bi-arrow-right"></i>
+                                        UI/UX Design
+                                    </a>
+                                </li>
+                                
+                                <li class="footer__services-item">
+                                    <a href="" class="footer__services-link">
+                                        <i class="footer__services-icon bi bi-arrow-right"></i>
+                                        Mobile App
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__quest">
+                            <h2 class="footer__quest-head">Have a Questions?</h2>
+                            <ul class="footer__quest-list">
+                                <li class="footer__quest-item">
+                                    <i class="fa-solid fa-map footer__quest-icon"></i>
+                                    Hẻm 19/28 Vườn Lài An Phú Đông, Quận 12, Thành phố Hồ Chí Minh
+                                </li>
+                                <li class="footer__quest-item">
+                                    <a href="tel://0355818085" class="footer__quest-link">
+                                        <i class="fa-solid fa-phone footer__quest-icon"></i>
+                                        0355818085
+                                    </a>
+                                </li>
+                                <li class="footer__quest-item">
+                                    <a href="mailto:ngockunn13801@gmail.com" class="footer__quest-link">
+                                        <i class="fa-solid fa-paper-plane footer__quest-icon"></i>
+                                        ngockunn13801@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="main.js"></script>
