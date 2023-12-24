@@ -178,6 +178,7 @@
     
     .contact,
     .map{
+        overflow: hidden;
         width: 100%;
     }
 
