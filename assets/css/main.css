@@ -517,6 +517,7 @@
 
 .contact,
 .map{
+    overflow: hidden;
     width: 50%;
 }
 
