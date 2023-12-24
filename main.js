@@ -83,9 +83,8 @@ const app ={
                 const offset = sec.offsetTop;
                 const height = sec.offsetHeight;
                 const id = sec.getAttribute('id');
-                
+                console.log(id);
                 if(top >= offset && top < offset + height){
-                    
                     navlinks.forEach((links,index)=>{
                         links.classList.remove('activeme');
                         $('.header__navbar-item a[href="#'+ id +'"]').classList.add('activeme');

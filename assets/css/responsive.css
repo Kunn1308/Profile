@@ -46,6 +46,10 @@
     .about__imfor{
         margin: 0;
     }
+    
+    .header__navbar-item-link{
+        padding: 0;
+    }
 }
 
 @media (min-width:61.875em) and (max-width:1200px){
@@ -111,6 +115,12 @@
     .grid__row{
         padding: 0 12px;
     }
+
+    .header__navbar,
+    .content{
+        padding: 0 12px;
+    }
+    
     .about__image,
     .about__imfor{
         width: 100%;
